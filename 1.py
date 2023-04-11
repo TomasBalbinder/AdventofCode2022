@@ -1,6 +1,6 @@
 
 def part_1():
-    with open('input.txt', 'r') as calories:
+    with open('input_1.txt', 'r') as calories:
         reading = calories.read().strip()
         
         split_space_elfs = reading.split('\n\n')
