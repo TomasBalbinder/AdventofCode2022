@@ -55,14 +55,23 @@ for i in range(0,len(numbers_list),2):
 
 
 score = 0        
-for i in new_list:
-    if i[0] > i[1]:
-        score = score + i[1]
 
-    elif i[0] < i[1]:
+for i in new_list:
+
+    if i[0] == 3 and i[1] == 1:
+        score = score + (i[1] + 6)
+
+    elif i[0] == 1 and i[1] == 2:
+        score = score + (i[1] + 6)
+
+    elif i[0] == 2 and i[1] == 3:
         score = score + (i[1] + 6)
 
     elif i[0] == i[1]:
         score = score + (i[1] + 3)
+
+    else:
+        score = score + (i[1])
+
 
 print(score)
